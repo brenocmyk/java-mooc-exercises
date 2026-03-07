@@ -5,6 +5,17 @@ public class NumberAndSumOfNumbers {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        System.out.println("Give a number:");
+        int number = Integer.valueOf(scanner.nextLine());
+        int count = 0;
+        int sum = 0;
+        while (number != 0) {
+            count++;
+            sum += number;
+            System.out.println("Give a number:");
+            number = Integer.valueOf(scanner.nextLine());
+        }
+        System.out.println("Number of numbers: " + count);
+        System.out.println("Sum of the numbers: " + sum);
     }
 }
